@@ -11,6 +11,7 @@ public class Card implements Comparable {
 		super();
 		this.eSuit = eSuit;
 		this.eRank = eRank;
+
 	}
 
 	public eRank geteRank() {
@@ -30,8 +31,10 @@ public class Card implements Comparable {
 	}
 
 	@Override
+
 	public int compareTo(Object o) {
 		Card c = (Card) o;
 		return this.geteRank().compareTo(c.geteRank());
 	}
+
 }
